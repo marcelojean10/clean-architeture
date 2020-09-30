@@ -9,5 +9,4 @@ use Alura\Architecture\Student;
 $cpf = new CPF('87335522072');
 $mail = new Mail('marcelojeam1@gmail.com');
 $student = new Student();
-
-print_r($mail);
+$student->addPhone('55', '985774419');
