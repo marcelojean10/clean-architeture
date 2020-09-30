@@ -1,6 +1,9 @@
 <?php
 
-namespace Alura\Architecture;
+namespace Alura\Architecture\Student;
+
+use Alura\Architecture\CPF;
+use Alura\Architecture\Mail;
 
 class Student
 {
