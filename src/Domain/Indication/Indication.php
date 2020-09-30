@@ -1,10 +1,10 @@
 <?php
 
 
-namespace Alura\Architecture\Indication;
+namespace Alura\Architecture\Domain\Indication;
 
 
-use Alura\Architecture\Student\Student;
+use Alura\Architecture\Domain\Student;
 
 class Indication
 {

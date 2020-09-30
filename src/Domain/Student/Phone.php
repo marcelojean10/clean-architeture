@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Alura\Architecture\Student;
+namespace Alura\Architecture\Domain\Student;
 
 
 class Phone

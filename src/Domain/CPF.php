@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Alura\Architecture;
+namespace Alura\Architecture\Domain;
 
 
 class CPF

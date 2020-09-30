@@ -2,7 +2,7 @@
 
 namespace Alura\Architecture\Tests;
 
-use Alura\Architecture\CPF;
+use Alura\Architecture\Domain\CPF;
 use PHPUnit\Framework\TestCase;
 
 class CPFTest extends TestCase

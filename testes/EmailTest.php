@@ -2,7 +2,7 @@
 
 namespace Alura\Architecture\Tests;
 
-use Alura\Architecture\Mail;
+use Alura\Architecture\Domain\Mail;
 use PHPUnit\Framework\TestCase;
 
 class EmailTest extends TestCase
