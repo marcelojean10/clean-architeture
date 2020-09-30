@@ -6,20 +6,20 @@ namespace Alura\Architecture;
 
 class CPF
 {
-    private string $identity;
+    private string $number;
 
-    public function __construct($identity)
+    public function __construct($number)
     {
-        if ($this->validate($identity) === false) {
+        if ($this->validate($number) === false) {
             throw new \InvalidArgumentException("CPF inválido.");
         }
 
-        $this->identity = $identity;
+        $this->number = $number;
     }
 
     public function __toString()
     {
-        return $this->identity;
+        return $this->number;
     }
 
     private function validate($cpf)
