@@ -33,4 +33,24 @@ class Student
         $this->phones[] = new Phone($ddd, $number);
         return $this;
     }
+
+    public function cpf()
+    {
+        return $this->cpf;
+    }
+
+    public function name()
+    {
+        return $this->name;
+    }
+
+    public function email()
+    {
+        return $this->email;
+    }
+
+    public function phones()
+    {
+        return $this->phones;
+    }
 }

@@ -7,13 +7,14 @@ use Alura\Architecture\Domain\Student\Phone;
 use Alura\Architecture\Domain\Student\Student;
 use Alura\Architecture\Domain\Student\StudentNotFound;
 use Alura\Architecture\Domain\Student\StudentRepository;
+use PDO;
 
 class StudentRepositoryPDO implements StudentRepository
 {
 
-    private \PDO $connection;
+    private PDO $connection;
 
-    public function __construct(\PDO $connection)
+    public function __construct(PDO $connection)
     {
         $this->connection = $connection;
     }

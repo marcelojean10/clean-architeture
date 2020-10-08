@@ -3,7 +3,6 @@
 
 namespace Alura\Architecture\Infra\Persistence;
 
-
 use PDO;
 
 class ConnectionFactory
@@ -11,10 +10,7 @@ class ConnectionFactory
 
     public static function createConnection(): PDO
     {
-        $databasePath = __DIR__ . '../Database/banco.sqlite';
-        $pdo = new PDO('sqlite:' . $databasePath);
-        $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-        return $pdo;
+        $databasePath = __DIR__ . '/../Database/banco.sqlite';
+        return new PDO('sqlite:' . $databasePath);
     }
 }

@@ -1,20 +1,20 @@
-CREATE TABLE alunos (
+CREATE TABLE student (
     cpf TEXT PRIMARY KEY,
-    nome TEXT,
+    name TEXT,
     email TEXT
 );
-CREATE TABLE telefones (
+CREATE TABLE phones (
     ddd TEXT,
-    numero TEXT,
-    cpf_aluno TEXT,
-    PRIMARY KEY (ddd, numero),
-    FOREIGN KEY(cpf_aluno) REFERENCES alunos(cpf)
+    number TEXT,
+    cpf_student TEXT,
+    PRIMARY KEY (ddd, number),
+    FOREIGN KEY(cpf_student) REFERENCES student(cpf)
 );
-CREATE TABLE indicacoes (
-    cpf_indicante TEXT,
-    cpf_indicado TEXT,
-    data_indicacao TEXT,
-    PRIMARY KEY (cpf_indicante, cpf_indicado),
-    FOREIGN KEY(cpf_indicado) REFERENCES alunos(cpf),
-    FOREIGN KEY(cpf_indicante) REFERENCES alunos(cpf)
+CREATE TABLE indication (
+    cpf_indication TEXT,
+    cpf_indicated TEXT,
+    data_indication TEXT,
+    PRIMARY KEY (cpf_indication, cpf_indicated),
+    FOREIGN KEY(cpf_indicated) REFERENCES student(cpf),
+    FOREIGN KEY(cpf_indication) REFERENCES student(cpf)
 );

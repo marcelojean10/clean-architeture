@@ -27,6 +27,8 @@ class Phone
     {
 
         if (preg_match('/\d{2}/', $ddd) !== 1) {
+            echo $ddd;
+            echo '' . PHP_EOL;
             throw new \InvalidArgumentException('DDD inválido.');
         }
 
@@ -57,6 +59,16 @@ class Phone
     {
         // TODO: Implement __toString() method.
         return "({$this->ddd}) {$this->phone}";
+    }
+
+    public function ddd()
+    {
+        return $this->ddd;
+    }
+
+    public function number()
+    {
+        return $this->phone;
     }
 
 }
